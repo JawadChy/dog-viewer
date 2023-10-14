@@ -1,0 +1,34 @@
+.discover-btn {
+    border-radius: 15px;
+    box-shadow: 0 7px #3e3e3e;
+}
+
+.discover-btn:hover {
+    color: #fff;
+    background-color: #1a1a1a
+}
+
+.discover-btn:active {
+    background-color: #0b0b0b !important;
+    box-shadow: 0 3px #666 !important;
+    transform: translateY(4px) !important;
+}
+
+.listing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.attribute-buttons {
+    margin: 0 5px;
+    background-color: #8d6612f0;
+    box-shadow: 0 3px #7e4b0d
+}
+
+.banned-buttons {
+    margin: 5px 0;
+    background-color: #bb6463f0;
+    box-shadow: 0 3px #7e4b0d
+}
