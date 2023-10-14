@@ -1,14 +1,14 @@
-.discover-btn {
+.discover-button {
     border-radius: 15px;
     box-shadow: 0 7px #3e3e3e;
 }
 
-.discover-btn:hover {
+.discover-button:hover {
     color: #fff;
     background-color: #1a1a1a
 }
 
-.discover-btn:active {
+.discover-button:active {
     background-color: #0b0b0b !important;
     box-shadow: 0 3px #666 !important;
     transform: translateY(4px) !important;
@@ -31,4 +31,19 @@
     margin: 5px 0;
     background-color: #bb6463f0;
     box-shadow: 0 3px #7e4b0d
+}
+
+.discover-btn, .attribute-buttons, .banned-buttons {
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+}
+
+.discover-container {
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    border-radius: 15px;
 }
