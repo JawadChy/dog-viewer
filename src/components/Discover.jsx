@@ -4,14 +4,17 @@ import './Discover.css';
 const ACCESS_KEY = import.meta.env.VITE_APP_ACCESS_KEY;
 
 function AttributeButton({ attribute, label, addToBanList }) {
-    if (!attribute || attribute === "Unknown") return null;
+    const displayValue = label || attribute;
+
+    if (!displayValue || displayValue === "Unknown") return null;
 
     return (
-        <button type="attribute" className="attribute-buttons" onClick={() => addToBanList(attribute)}>
-            {label || attribute}
+        <button type="attribute" className="attribute-buttons" onClick={() => addToBanList(displayValue)}>
+            {displayValue}
         </button>
     );
 }
+
 
 function Discover({ banList, addToBanList, addToHistory }) {
     const [data, setData] = useState(null);
